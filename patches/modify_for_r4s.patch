@@ -8,7 +8,7 @@ index ff4dbc1..cf6a4ac 100644
  	bool "Include Shortcut-FE"
 -	depends on PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING=n
 +	#depends on PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING=n
- 	default y
+ 	default n
  
  config PACKAGE_$(PKG_NAME)_INCLUDE_SHORTCUT_FE_CM
 
