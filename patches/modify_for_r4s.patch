@@ -1,1 +1,28 @@
+diff --git a/feeds/luci/applications/luci-app-turboacc/Makefile b/feeds/luci/applications/luci-app-turboacc/Makefile
+index ff4dbc1..cf6a4ac 100644
+--- a/test1.txt
++++ b/test2.txt
+@@ -38,7 +38,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING
+ 
+ config PACKAGE_$(PKG_NAME)_INCLUDE_SHORTCUT_FE
+ 	bool "Include Shortcut-FE"
+-	depends on PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING=n
++	#depends on PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING=n
+ 	default n
+ 
+ config PACKAGE_$(PKG_NAME)_INCLUDE_SHORTCUT_FE_CM
 
+diff --git a/feeds/luci/applications/luci-app-turboacc/root/etc/config/turboacc b/feeds/luci/applications/luci-app-turboacc/root/etc/config/turboacc
+index ace3a7c..f5e3884 100644
+--- a/test1.txt
++++ b/test2.txt
+@@ -1,7 +1,7 @@
+ 
+ config turboacc 'config'
+-	option sw_flow '1'
+-	option hw_flow '1'
++	option sw_flow '0'
++	option hw_flow '0'
+ 	option sfe_flow '1'
+ 	option fullcone_nat '1'
+ 	option bbr_cca '0'
