@@ -1,16 +1,18 @@
 diff --git a/feeds/luci/applications/luci-app-turboacc/Makefile b/feeds/luci/applications/luci-app-turboacc/Makefile
-index ff4dbc1..cf6a4ac 100644
+index ff4dbc1..d1a0bdb 100644
 --- a/feeds/luci/applications/luci-app-turboacc/Makefile
 +++ b/feeds/luci/applications/luci-app-turboacc/Makefile
-@@ -38,7 +38,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING
+@@ -38,8 +38,8 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING
  
  config PACKAGE_$(PKG_NAME)_INCLUDE_SHORTCUT_FE
  	bool "Include Shortcut-FE"
 -	depends on PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING=n
+-	default n
 +	#depends on PACKAGE_$(PKG_NAME)_INCLUDE_OFFLOADING=n
- 	default n
++	default y
  
  config PACKAGE_$(PKG_NAME)_INCLUDE_SHORTCUT_FE_CM
+ 	bool "Include Shortcut-FE CM"
 
 diff --git a/feeds/luci/applications/luci-app-turboacc/root/etc/config/turboacc b/feeds/luci/applications/luci-app-turboacc/root/etc/config/turboacc
 index ace3a7c..f5e3884 100644
