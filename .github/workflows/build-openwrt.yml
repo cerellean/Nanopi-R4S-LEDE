@@ -73,7 +73,7 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-        patch -p1 < "${GITHUB_WORKSPACE}/patches/modify_for_r4s.patch"
+       # patch -p1 < "${GITHUB_WORKSPACE}/patches/modify_for_r4s.patch"
         
     - name: Load custom configuration
       run: |
