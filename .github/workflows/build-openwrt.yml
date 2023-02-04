@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build Nanopi-R4S-openwrt
+name: Build Nanopi-R4S-lede
 
 on:
   repository_dispatch:
